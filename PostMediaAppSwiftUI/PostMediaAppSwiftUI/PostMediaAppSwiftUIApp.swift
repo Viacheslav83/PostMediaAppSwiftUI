@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-@main
-struct PostMediaAppSwiftUIApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+//@main
+//struct PostMediaAppSwiftUIApp: App {
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
