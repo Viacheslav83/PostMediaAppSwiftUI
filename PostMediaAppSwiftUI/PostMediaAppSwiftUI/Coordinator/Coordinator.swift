@@ -29,6 +29,7 @@ final class Coordinator<Router: NavigationRouterProtocol>: ObservableObject {
         let view = route.view()
         let viewWithCoordinator = view.environmentObject(self)
         let viewController = UIHostingController(rootView: viewWithCoordinator)
+        
         switch route.transition {
         case .push:
             navigationController.pushViewController(viewController, animated: animated)

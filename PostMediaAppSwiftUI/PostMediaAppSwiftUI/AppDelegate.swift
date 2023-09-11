@@ -7,9 +7,12 @@
 
 import SwiftUI
 import FirebaseCore
+import PMUtilities
 
 @main
-class AppDelegate: NSObject, UIApplicationDelegate {
+final class AppDelegate: NSObject, UIApplicationDelegate {
+    var sceneConfig: UISceneConfiguration?
+    
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
@@ -27,6 +30,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         let sessionRole = connectingSceneSession.role
         let sceneConfig = UISceneConfiguration(name: nil, sessionRole: sessionRole)
         sceneConfig.delegateClass = SceneDelegate.self
+        self.sceneConfig = sceneConfig
         return sceneConfig
     }
 }

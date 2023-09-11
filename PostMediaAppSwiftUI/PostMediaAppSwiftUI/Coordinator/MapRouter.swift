@@ -8,7 +8,7 @@
 import SwiftUI
 import PMUtilities
 
-enum MapRouter: NavigationRouterProtocol {
+enum MapRouter: NavigationRouterProtocol, CaseIterable {
     case onboarding
     case login
     case register
@@ -21,7 +21,7 @@ enum MapRouter: NavigationRouterProtocol {
         case .login:
             return .push
         case .register:
-            return .presentFullScreen
+            return .presentModally
         case .main:
             return .push
         }
