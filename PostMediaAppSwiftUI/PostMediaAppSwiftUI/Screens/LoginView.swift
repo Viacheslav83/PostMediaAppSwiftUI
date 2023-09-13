@@ -12,8 +12,7 @@ struct LoginView: View {
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
     
     private func loginTapped() {
-//        @AppStorage(UserDefaultsKeys.isUserLogged.key) var isUserLogged: Bool = true
-        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isUserLogged.key)
+        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isFirstTimeUser.key)
     }
     
     private func showRegisterScreen() {

@@ -7,40 +7,57 @@
 
 import SwiftUI
 import PMUtilities
+import PMViewModels
+import PMModels
 
 struct OnboardingView: View {
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
-    @State private var scrollID: Int?
+    @State private var currentIndex: Int = 0
+    @State private var currentModel: OnboardingModel?
     
     private let viewModel: OnboardingViewModelProtocol = OnboardingViewModel()
     
-    private func skipButtonTapped() {
-        @AppStorage(UserDefaultsKeys.isFirstTimeUser.key) var isFirstTimeUser: Bool = false
-        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        sceneDelegate?.showScreens(at: windowScene!)
-    }
-    
-    private func showLoginScreen() {
-        coordinator.show(.login, animated: true)
-    }
-    
     var body: some View {
         VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack() {
-                    let items = viewModel.getOnboardingItems()
-                    ForEach(items, id: \.id) { item in
-                        OnboardingItemView()
+            VStack {
+                cardContainerView
+            }
+        }
+        .padding()
+    }
+    
+    private func skipButtonTapped() {
+        UserDefaults.standard.set(false, forKey: UserDefaultsKeys.isFirstTimeUser.key)
+        sceneDelegate?.showScreens()
+    }
+    
+    private var cardContainerView: some View {
+        let view = VStack(spacing: 0) {
+            TabView(selection: $currentIndex) {
+                ForEach(viewModel.getOnboardingItems(), id: \.id) { model in
+                    OnboardingItemView(model: model) { buttonType in
+                        didTapButton(buttonType: buttonType)
                     }
+                    .padding(.bottom)
+                    .tag(model.pageNumber)
                 }
             }
-            
-            Button(action: {
-                skipButtonTapped()
-                showLoginScreen()
-            }, label: {
-                Text("Skip")
-            })
+            /// Comment next line if you need to display dots representing current index
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        }
+        return view
+    }
+
+    private func didTapButton(buttonType: ButtonType) {
+        switch buttonType {
+        case .next where currentIndex < 3:
+            withAnimation(.easeOut(duration: 0.5)) {
+                currentIndex += 1
+            }
+            break
+        default:
+            skipButtonTapped()
+            break
         }
     }
 }

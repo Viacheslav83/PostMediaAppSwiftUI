@@ -6,22 +6,56 @@
 //
 
 import SwiftUI
+import PMModels
+import PMUtilities
 
 struct OnboardingItemView: View {
+    //MARK: - Properties
+    let model: OnboardingModel
+    var didTapButton: ((_ type: ButtonType) -> ())?
+    
     var body: some View {
-        VStack {
-            Spacer()
-            Text("OnboardingItemView")
-                .frame(width: UIScreen.main.bounds.width,
-                       height: UIScreen.main.bounds.height,
-                   alignment: .center)
-            Spacer()  
-        }
+        ZStack {
+            VStack {
+                Spacer()
+                
+                Image(model.mainImage.rawValue)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: AppConstats.screenWidth * 0.7, height: AppConstats.screenWidth * 0.7)
+                    .cornerRadius(AppConstats.screenWidth / 2)
+                    .padding(.horizontal, AppConstats.leadingSpacing)
+                
+                VStack {
+                    Text(model.title)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                        .padding(.bottom, 16)
+                    
+                    Text(model.info)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .lineLimit(2)
+                        .multilineTextAlignment(.center)
+                    
+                    TwoButtonView(topText: model.nextButtonText,
+                                  bottomText: model.skipButtonText,
+                                  topColor: .purple,
+                                  bottomColor: .white) { type in
+                        didTapButton?(type)
+                    }
+                }
+            } //: VStack
+            .padding(.horizontal, 30)
+        } //: ZStack
     }
 }
 
+//MARK: - Preview
 struct OnboardingItemView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingItemView()
+        let model = OnboardingModel.mockModel
+        OnboardingItemView(model: model)
     }
 }

@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import PMUtilities
 
 struct MainView: View {
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
     
     var body: some View {
         Text("Main")
+            .task {
+                UserDefaults.standard.set(false, forKey: UserDefaultsKeys.isUserLogged.key)
+            }
     }
 }
 
