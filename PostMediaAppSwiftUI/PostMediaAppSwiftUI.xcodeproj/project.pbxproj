@@ -30,6 +30,12 @@
 		0D400DE32AA739D7001A30E9 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0D400DE22AA739D7001A30E9 /* FirebaseAuthCombine-Community */; };
 		0D400DE52AA739D7001A30E9 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0D400DE42AA739D7001A30E9 /* FirebaseCrashlytics */; };
 		0D400DE72AA73A19001A30E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D400DE62AA73A19001A30E9 /* AppDelegate.swift */; };
+		0D5A861E2AB442140052067E /* TextHeaderAndTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A861D2AB442140052067E /* TextHeaderAndTextFieldView.swift */; };
+		0D5A86202AB442F10052067E /* TextFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A861F2AB442F10052067E /* TextFieldModel.swift */; };
+		0D5A86222AB444630052067E /* TextFielType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86212AB444630052067E /* TextFielType.swift */; };
+		0D5A86242AB444980052067E /* MontserratFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86232AB444980052067E /* MontserratFontType.swift */; };
+		0D5A86262AB444B40052067E /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86252AB444B40052067E /* ColorType.swift */; };
+		0D5A86312AB468770052067E /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86302AB468770052067E /* Font+Extension.swift */; };
 		0D7458C22AAF175C00FB95DF /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458C12AAF175C00FB95DF /* Extension+View.swift */; };
 		0D7458C72AB03DCC00FB95DF /* ImageNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458C62AB03DCC00FB95DF /* ImageNameType.swift */; };
 		0D7458C92AB03E3E00FB95DF /* PMUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D067DA42AA6121E0077BCDA /* PMUtilities.framework */; };
@@ -112,6 +118,19 @@
 		0D316B062AB199EC00C88966 /* ButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
 		0D400DD62AA738A8001A30E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0D400DE62AA73A19001A30E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D5A861D2AB442140052067E /* TextHeaderAndTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHeaderAndTextFieldView.swift; sourceTree = "<group>"; };
+		0D5A861F2AB442F10052067E /* TextFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModel.swift; sourceTree = "<group>"; };
+		0D5A86212AB444630052067E /* TextFielType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFielType.swift; sourceTree = "<group>"; };
+		0D5A86232AB444980052067E /* MontserratFontType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontserratFontType.swift; sourceTree = "<group>"; };
+		0D5A86252AB444B40052067E /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		0D5A86292AB465C10052067E /* MontserratAlternates-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Medium.ttf"; sourceTree = "<group>"; };
+		0D5A862A2AB465C10052067E /* MontserratAlternates-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Black.ttf"; sourceTree = "<group>"; };
+		0D5A862B2AB465C10052067E /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
+		0D5A862C2AB465C10052067E /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0D5A862D2AB465C20052067E /* MontserratAlternates-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Regular.ttf"; sourceTree = "<group>"; };
+		0D5A862E2AB465C20052067E /* MontserratAlternates-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-SemiBold.ttf"; sourceTree = "<group>"; };
+		0D5A862F2AB467B90052067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0D5A86302AB468770052067E /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		0D7458C12AAF175C00FB95DF /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		0D7458C62AB03DCC00FB95DF /* ImageNameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameType.swift; sourceTree = "<group>"; };
 		0D7458CB2AB0400A00FB95DF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -182,7 +201,6 @@
 		0D067D852AA610690077BCDA = {
 			isa = PBXGroup;
 			children = (
-				0D316B032AB1920A00C88966 /* Modifiers */,
 				0D067D902AA610690077BCDA /* PostMediaAppSwiftUI */,
 				0D067DA52AA6121E0077BCDA /* PMUtilities */,
 				0DDE61522AAB775C00F90E58 /* PMModels */,
@@ -206,6 +224,8 @@
 		0D067D902AA610690077BCDA /* PostMediaAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0D5A862F2AB467B90052067E /* Info.plist */,
+				0D5A86272AB465230052067E /* Helpers */,
 				0D067D912AA610690077BCDA /* PostMediaAppSwiftUIApp.swift */,
 				0D400DE62AA73A19001A30E9 /* AppDelegate.swift */,
 				0DE472E82AA77A73009E0E0C /* SceneDelegate.swift */,
@@ -214,7 +234,6 @@
 				0DE472D32AA7761F009E0E0C /* Coordinator */,
 				0D400DD82AA738B0001A30E9 /* SuportingFiles */,
 				0D067D972AA6106B0077BCDA /* Preview Content */,
-				0D7458C32AAF176100FB95DF /* Extensions */,
 			);
 			path = PostMediaAppSwiftUI;
 			sourceTree = "<group>";
@@ -239,6 +258,9 @@
 				0D7458C62AB03DCC00FB95DF /* ImageNameType.swift */,
 				0D316AFF2AB0A2F900C88966 /* AppConstats.swift */,
 				0D316B062AB199EC00C88966 /* ButtonType.swift */,
+				0D5A86212AB444630052067E /* TextFielType.swift */,
+				0D5A86232AB444980052067E /* MontserratFontType.swift */,
+				0D5A86252AB444B40052067E /* ColorType.swift */,
 			);
 			path = PMUtilities;
 			sourceTree = "<group>";
@@ -260,6 +282,29 @@
 			path = SuportingFiles;
 			sourceTree = "<group>";
 		};
+		0D5A86272AB465230052067E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D5A86282AB465460052067E /* Fonts */,
+				0D7458C32AAF176100FB95DF /* Extensions */,
+				0D316B032AB1920A00C88966 /* Modifiers */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0D5A86282AB465460052067E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D5A862A2AB465C10052067E /* MontserratAlternates-Black.ttf */,
+				0D5A862B2AB465C10052067E /* MontserratAlternates-Bold.ttf */,
+				0D5A862C2AB465C10052067E /* MontserratAlternates-ExtraBold.ttf */,
+				0D5A86292AB465C10052067E /* MontserratAlternates-Medium.ttf */,
+				0D5A862D2AB465C20052067E /* MontserratAlternates-Regular.ttf */,
+				0D5A862E2AB465C20052067E /* MontserratAlternates-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0D7458C32AAF176100FB95DF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				0D7458C12AAF175C00FB95DF /* Extension+View.swift */,
+				0D5A86302AB468770052067E /* Font+Extension.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -345,6 +391,7 @@
 			children = (
 				0DE472F32AAA2E21009E0E0C /* OnboardingItemView.swift */,
 				0D316B012AB0DFAB00C88966 /* TwoButtonView.swift */,
+				0D5A861D2AB442140052067E /* TextHeaderAndTextFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				0DE472EF2AAA2C3F009E0E0C /* OnboardingModel.swift */,
+				0D5A861F2AB442F10052067E /* TextFieldModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -565,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5A861E2AB442140052067E /* TextHeaderAndTextFieldView.swift in Sources */,
 				0DE472DF2AA7786E009E0E0C /* LoginView.swift in Sources */,
 				0DE472E32AA778E1009E0E0C /* MainView.swift in Sources */,
 				0DE472E72AA779B3009E0E0C /* Coordinator.swift in Sources */,
@@ -578,6 +627,7 @@
 				0DE472DD2AA77840009E0E0C /* OnboardingView.swift in Sources */,
 				0DE472DB2AA77752009E0E0C /* NavigationRouterProtocol.swift in Sources */,
 				0D7458C22AAF175C00FB95DF /* Extension+View.swift in Sources */,
+				0D5A86312AB468770052067E /* Font+Extension.swift in Sources */,
 				0DE472F42AAA2E21009E0E0C /* OnboardingItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,11 +638,14 @@
 			files = (
 				0D7458C72AB03DCC00FB95DF /* ImageNameType.swift in Sources */,
 				0D316B072AB199EC00C88966 /* ButtonType.swift in Sources */,
+				0D5A86222AB444630052067E /* TextFielType.swift in Sources */,
+				0D5A86262AB444B40052067E /* ColorType.swift in Sources */,
 				0DE472D72AA77675009E0E0C /* NavigationTranisitionStyle.swift in Sources */,
 				0D067DB52AA615150077BCDA /* AppConfiguration.swift in Sources */,
 				0DDE614B2AAB67B800F90E58 /* UserDefaultsKeys.swift in Sources */,
 				0D316B002AB0A2F900C88966 /* AppConstats.swift in Sources */,
 				0D067DB32AA612320077BCDA /* EndPoint.swift in Sources */,
+				0D5A86242AB444980052067E /* MontserratFontType.swift in Sources */,
 				0D067DA82AA6121E0077BCDA /* PMUtilities.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5A86202AB442F10052067E /* TextFieldModel.swift in Sources */,
 				0DDE61702AAB778300F90E58 /* OnboardingModel.swift in Sources */,
 				0DDE61552AAB775C00F90E58 /* PMModels.docc in Sources */,
 			);
@@ -762,6 +816,7 @@
 				DEVELOPMENT_TEAM = 6Z5CWU22LN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostMediaAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -792,6 +847,7 @@
 				DEVELOPMENT_TEAM = 6Z5CWU22LN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostMediaAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
