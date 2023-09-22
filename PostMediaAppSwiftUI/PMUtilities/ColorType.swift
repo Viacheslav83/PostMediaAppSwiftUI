@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+public enum ColorType: String {
+    case baseColor
+    case customBlueColor
+    case customRedColor
+    case shadowColor
+    
+    case white
+}

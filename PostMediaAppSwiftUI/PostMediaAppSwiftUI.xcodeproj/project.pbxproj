@@ -36,10 +36,17 @@
 		0D5A86242AB444980052067E /* MontserratFontType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86232AB444980052067E /* MontserratFontType.swift */; };
 		0D5A86262AB444B40052067E /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86252AB444B40052067E /* ColorType.swift */; };
 		0D5A86312AB468770052067E /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86302AB468770052067E /* Font+Extension.swift */; };
+		0D5A86332AB48EFA0052067E /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86322AB48EFA0052067E /* LoginVM.swift */; };
+		0D5A86352AB48FAD0052067E /* LoginUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86342AB48FAD0052067E /* LoginUIModel.swift */; };
+		0D5A86372AB492700052067E /* TwoButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86362AB492700052067E /* TwoButtonModel.swift */; };
+		0D5A86392AB493F60052067E /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A86382AB493F60052067E /* AttributedText.swift */; };
+		0D63EFD42ABB506200FD5C39 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D63EFD32ABB506200FD5C39 /* Image+Extension.swift */; };
+		0D63EFD62ABB513D00FD5C39 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D63EFD52ABB513D00FD5C39 /* Color+Extension.swift */; };
 		0D7458C22AAF175C00FB95DF /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458C12AAF175C00FB95DF /* Extension+View.swift */; };
 		0D7458C72AB03DCC00FB95DF /* ImageNameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458C62AB03DCC00FB95DF /* ImageNameType.swift */; };
 		0D7458C92AB03E3E00FB95DF /* PMUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D067DA42AA6121E0077BCDA /* PMUtilities.framework */; };
-		0D7458CC2AB0401C00FB95DF /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458CB2AB0400A00FB95DF /* OnboardingViewModel.swift */; };
+		0D7458CC2AB0401C00FB95DF /* OnboardingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7458CB2AB0400A00FB95DF /* OnboardingVM.swift */; };
+		0D7858162ABCB14E00F78227 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7858152ABCB14E00F78227 /* ButtonView.swift */; };
 		0DDE614B2AAB67B800F90E58 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE614A2AAB67B800F90E58 /* UserDefaultsKeys.swift */; };
 		0DDE61552AAB775C00F90E58 /* PMModels.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE61542AAB775C00F90E58 /* PMModels.docc */; };
 		0DDE61562AAB775C00F90E58 /* PMModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDE61532AAB775C00F90E58 /* PMModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,9 +138,16 @@
 		0D5A862E2AB465C20052067E /* MontserratAlternates-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-SemiBold.ttf"; sourceTree = "<group>"; };
 		0D5A862F2AB467B90052067E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0D5A86302AB468770052067E /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		0D5A86322AB48EFA0052067E /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		0D5A86342AB48FAD0052067E /* LoginUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIModel.swift; sourceTree = "<group>"; };
+		0D5A86362AB492700052067E /* TwoButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonModel.swift; sourceTree = "<group>"; };
+		0D5A86382AB493F60052067E /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
+		0D63EFD32ABB506200FD5C39 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		0D63EFD52ABB513D00FD5C39 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		0D7458C12AAF175C00FB95DF /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		0D7458C62AB03DCC00FB95DF /* ImageNameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNameType.swift; sourceTree = "<group>"; };
-		0D7458CB2AB0400A00FB95DF /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		0D7458CB2AB0400A00FB95DF /* OnboardingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVM.swift; sourceTree = "<group>"; };
+		0D7858152ABCB14E00F78227 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		0DDE614A2AAB67B800F90E58 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		0DDE61512AAB775B00F90E58 /* PMModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PMModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDE61532AAB775C00F90E58 /* PMModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMModels.h; sourceTree = "<group>"; };
@@ -261,6 +275,7 @@
 				0D5A86212AB444630052067E /* TextFielType.swift */,
 				0D5A86232AB444980052067E /* MontserratFontType.swift */,
 				0D5A86252AB444B40052067E /* ColorType.swift */,
+				0D5A86382AB493F60052067E /* AttributedText.swift */,
 			);
 			path = PMUtilities;
 			sourceTree = "<group>";
@@ -305,6 +320,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		0D5A863A2AB49E930052067E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0DE472DE2AA7786E009E0E0C /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		0D7458C32AAF176100FB95DF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +342,8 @@
 			children = (
 				0D7458C12AAF175C00FB95DF /* Extension+View.swift */,
 				0D5A86302AB468770052067E /* Font+Extension.swift */,
+				0D63EFD32ABB506200FD5C39 /* Image+Extension.swift */,
+				0D63EFD52ABB513D00FD5C39 /* Color+Extension.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -340,7 +365,8 @@
 		0D7458CA2AB0400A00FB95DF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0D7458CB2AB0400A00FB95DF /* OnboardingViewModel.swift */,
+				0D7458CB2AB0400A00FB95DF /* OnboardingVM.swift */,
+				0D5A86322AB48EFA0052067E /* LoginVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -379,7 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				0DE472EC2AAA2C13009E0E0C /* Onboarding */,
-				0DE472DE2AA7786E009E0E0C /* LoginView.swift */,
+				0D5A863A2AB49E930052067E /* Login */,
 				0DE472E02AA77891009E0E0C /* RegisterView.swift */,
 				0DE472E22AA778E1009E0E0C /* MainView.swift */,
 			);
@@ -392,6 +418,7 @@
 				0DE472F32AAA2E21009E0E0C /* OnboardingItemView.swift */,
 				0D316B012AB0DFAB00C88966 /* TwoButtonView.swift */,
 				0D5A861D2AB442140052067E /* TextHeaderAndTextFieldView.swift */,
+				0D7858152ABCB14E00F78227 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +428,8 @@
 			children = (
 				0DE472EF2AAA2C3F009E0E0C /* OnboardingModel.swift */,
 				0D5A861F2AB442F10052067E /* TextFieldModel.swift */,
+				0D5A86342AB48FAD0052067E /* LoginUIModel.swift */,
+				0D5A86362AB492700052067E /* TwoButtonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -614,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5A861E2AB442140052067E /* TextHeaderAndTextFieldView.swift in Sources */,
+				0D63EFD62ABB513D00FD5C39 /* Color+Extension.swift in Sources */,
 				0DE472DF2AA7786E009E0E0C /* LoginView.swift in Sources */,
 				0DE472E32AA778E1009E0E0C /* MainView.swift in Sources */,
 				0DE472E72AA779B3009E0E0C /* Coordinator.swift in Sources */,
@@ -622,11 +652,13 @@
 				0D316B022AB0DFAB00C88966 /* TwoButtonView.swift in Sources */,
 				0DE472D92AA776F0009E0E0C /* MapRouter.swift in Sources */,
 				0DE472E12AA77891009E0E0C /* RegisterView.swift in Sources */,
+				0D63EFD42ABB506200FD5C39 /* Image+Extension.swift in Sources */,
 				0DE472E92AA77A73009E0E0C /* SceneDelegate.swift in Sources */,
 				0D067D922AA610690077BCDA /* PostMediaAppSwiftUIApp.swift in Sources */,
 				0DE472DD2AA77840009E0E0C /* OnboardingView.swift in Sources */,
 				0DE472DB2AA77752009E0E0C /* NavigationRouterProtocol.swift in Sources */,
 				0D7458C22AAF175C00FB95DF /* Extension+View.swift in Sources */,
+				0D7858162ABCB14E00F78227 /* ButtonView.swift in Sources */,
 				0D5A86312AB468770052067E /* Font+Extension.swift in Sources */,
 				0DE472F42AAA2E21009E0E0C /* OnboardingItemView.swift in Sources */,
 			);
@@ -637,6 +669,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7458C72AB03DCC00FB95DF /* ImageNameType.swift in Sources */,
+				0D5A86392AB493F60052067E /* AttributedText.swift in Sources */,
 				0D316B072AB199EC00C88966 /* ButtonType.swift in Sources */,
 				0D5A86222AB444630052067E /* TextFielType.swift in Sources */,
 				0D5A86262AB444B40052067E /* ColorType.swift in Sources */,
@@ -655,6 +688,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5A86202AB442F10052067E /* TextFieldModel.swift in Sources */,
+				0D5A86352AB48FAD0052067E /* LoginUIModel.swift in Sources */,
+				0D5A86372AB492700052067E /* TwoButtonModel.swift in Sources */,
 				0DDE61702AAB778300F90E58 /* OnboardingModel.swift in Sources */,
 				0DDE61552AAB775C00F90E58 /* PMModels.docc in Sources */,
 			);
@@ -665,7 +700,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDE61672AAB776D00F90E58 /* PMViewModels.docc in Sources */,
-				0D7458CC2AB0401C00FB95DF /* OnboardingViewModel.swift in Sources */,
+				0D7458CC2AB0401C00FB95DF /* OnboardingVM.swift in Sources */,
+				0D5A86332AB48EFA0052067E /* LoginVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

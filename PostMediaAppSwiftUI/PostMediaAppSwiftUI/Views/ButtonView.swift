@@ -6,13 +6,30 @@
 //
 
 import SwiftUI
+//import PMModels
+import PMUtilities
 
 struct ButtonView: View {
+    //MARK: - Properties
+    var buttonType: ButtonType
+    var didTapButton: ((_ type: ButtonType) -> ())?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button(action: {
+                didTapButton?(buttonType.buttonTapped)
+            }, label: {
+                Text(buttonType.title)
+                    .modifier(ButtonTextModifier())
+            })
+            .padding()
+            .frame(maxWidth: AppConstats.screenWidth / 2)
+            .background(buttonType.backgroundColor)
+            .cornerRadius(buttonType.cornerRadius)
+            .frame(height: buttonType.buttonHeight)
+            .padding(.bottom, 16)
     }
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(buttonType: ButtonType.next)
 }

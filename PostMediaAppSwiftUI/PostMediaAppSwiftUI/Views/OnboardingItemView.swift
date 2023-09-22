@@ -12,6 +12,7 @@ import PMUtilities
 struct OnboardingItemView: View {
     //MARK: - Properties
     let model: OnboardingModel
+    var isClearButton: Bool = false
     var didTapButton: ((_ type: ButtonType) -> ())?
     
     var body: some View {
@@ -39,12 +40,10 @@ struct OnboardingItemView: View {
                         .lineLimit(2)
                         .multilineTextAlignment(.center)
                     
-                    TwoButtonView(topText: model.nextButtonText,
-                                  bottomText: model.skipButtonText,
-                                  topColor: .purple,
-                                  bottomColor: .white) { type in
+                    TwoButtonView(buttonModel: model.twoButtonModel, isClearButton: isClearButton) { type in
                         didTapButton?(type)
                     }
+
                 }
             } //: VStack
             .padding(.horizontal, 30)

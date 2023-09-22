@@ -9,30 +9,32 @@ import SwiftUI
 import PMModels
 import PMUtilities
 
-public protocol OnboardingViewModelProtocol {
+public protocol OnboardingVMProtocol {
     func getOnboardingItems() -> [OnboardingModel]
 }
 
-public final class OnboardingViewModel: OnboardingViewModelProtocol, ObservableObject {
+public final class OnboardingVM: OnboardingVMProtocol, ObservableObject {
     
     @Published private var items: [OnboardingModel] = [
         .init(mainImage: .onboardingOne,
               title: "Manage your media.",
               info: "You can easily control your media!",
+              twoButtonModel: TwoButtonModel(topButtonType: .next, bottomButtonType: .skip),
               pageNumber: 0),
         .init(mainImage: .onboardingTwo,
               title: "Change your media.",
               info: "You can easily add some effects to you media!",
+              twoButtonModel: TwoButtonModel(topButtonType: .next, bottomButtonType: .skip),
               pageNumber: 1),
         .init(mainImage: .onboardingThree,
               title: "Special effects.",
               info: "You can easily add some effects to you media!",
+              twoButtonModel: TwoButtonModel(topButtonType: .next, bottomButtonType: .skip),
               pageNumber: 2),
         .init(mainImage: .onboardingFour,
               title: "Post",
               info: "Just post it!!!",
-              nextButtonText: "Go next",
-              skipButtonText: nil,
+              twoButtonModel: TwoButtonModel(topButtonType: .goToLogin),
               pageNumber: 3),
     ]
     

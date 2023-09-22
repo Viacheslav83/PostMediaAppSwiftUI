@@ -8,13 +8,18 @@
 import SwiftUI
 import PMUtilities
 import PMViewModels
+import PMModels
 
 struct LoginView: View {
-    let vm: LoginVMProtocol = LoginVMP()
+    private let vm: LoginVMProtocol = LoginVM()
+    private lazy var model: LoginUIModel = {
+        return vm.getUIModels()
+    }()
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
     
     private func loginTapped() {
         UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isFirstTimeUser.key)
+        sceneDelegate?.showScreens()
     }
     
     private func showRegisterScreen() {
@@ -29,23 +34,24 @@ struct LoginView: View {
         VStack {
             Spacer()
             
-            Text("Login")
+            Image(vm.getUIModels().mainImageName.rawValue)
+                .resizable()
+                .scaledToFit()
+                .frame(width: AppConstats.screenWidth / 2, height: AppConstats.screenWidth / 2)
+                .cornerRadius(AppConstats.screenWidth / 4)
+            
+            TextHeaderAndTextFieldView(model: vm.getUIModels().emailType)
+            
+            TextHeaderAndTextFieldView(model: vm.getUIModels().passwordType)
             
             Spacer()
             
-            Button {
+            TwoButtonView(buttonModel: vm.getUIModels().loginButtonType) { type in
+                print("type")
                 loginTapped()
-                showMainScreen()
-            } label: {
-                Text("Login")
-            }
-            
-            Button {
-                showRegisterScreen()
-            } label: {
-                Text("Go to register screen")
             }
         }
+        .padding(.horizontal, 16)
     }
 }
 

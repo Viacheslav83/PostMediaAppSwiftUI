@@ -6,13 +6,10 @@
 //
 
 import SwiftUI
+import PMUtilities
 
-struct Image_Extension: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension Image {
+    func image(_ imageNameType: ImageNameType, bundle: Bundle? = nil) -> Image {
+        return .init(imageNameType.rawValue, bundle: bundle)
     }
-}
-
-#Preview {
-    Image_Extension()
 }

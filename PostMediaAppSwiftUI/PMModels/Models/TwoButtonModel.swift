@@ -8,23 +8,21 @@
 import PMUtilities
 
 public struct TwoButtonModel {
-    let title       : String
-    let cornerRadius: CGFloat?
-    let image       : ImageNameType?
-    let colorType   : ColorType
-    let fontName    : MontserratFontType
+    public let topButtonType   : ButtonType
+    public let bottomButtonType: ButtonType?
+    public let isHideBottomButton: Bool
     
     public init(
-        title       : String,
-        cornerRadius: CGFloat?,
-        image       : ImageNameType? = nil,
-        colorType   : ColorType,
-        fontName    : MontserratFontType
+        topButtonType   : ButtonType,
+        bottomButtonType: ButtonType? = nil,
+        isHideBottomButton: Bool = false
     ) {
-        self.title          = title
-        self.cornerRadius   = cornerRadius
-        self.image          = image
-        self.colorType      = colorType
-        self.fontName       = fontName
+        self.topButtonType      = topButtonType
+        self.bottomButtonType   = bottomButtonType
+        self.isHideBottomButton = isHideBottomButton
+    }
+    
+    public static var mockButtonModel: TwoButtonModel {
+        return .init(topButtonType: .next, bottomButtonType: .skip)
     }
 }

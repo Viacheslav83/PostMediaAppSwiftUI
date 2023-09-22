@@ -15,7 +15,7 @@ struct OnboardingView: View {
     @State private var currentIndex: Int = 0
     @State private var currentModel: OnboardingModel?
     
-    private let viewModel: OnboardingViewModelProtocol = OnboardingViewModel()
+    private let viewModel: OnboardingVMProtocol = OnboardingVM()
     
     var body: some View {
         VStack {
@@ -35,7 +35,7 @@ struct OnboardingView: View {
         let view = VStack(spacing: 0) {
             TabView(selection: $currentIndex) {
                 ForEach(viewModel.getOnboardingItems(), id: \.id) { model in
-                    OnboardingItemView(model: model) { buttonType in
+                    OnboardingItemView(model: model, isClearButton: currentIndex == 3 ) { buttonType in
                         didTapButton(buttonType: buttonType)
                     }
                     .padding(.bottom)

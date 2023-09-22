@@ -6,13 +6,10 @@
 //
 
 import SwiftUI
+import PMUtilities
 
-struct Color_Extension: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension Color {
+    func color(_ colorType: ColorType, bundle: Bundle? = nil) -> Color {
+        return Color(colorType.rawValue, bundle: bundle)
     }
-}
-
-#Preview {
-    Color_Extension()
 }
