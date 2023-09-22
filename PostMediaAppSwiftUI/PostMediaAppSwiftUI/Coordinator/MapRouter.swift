@@ -21,7 +21,7 @@ enum MapRouter: NavigationRouterProtocol, CaseIterable {
         case .login:
             return .push
         case .register:
-            return .presentModally
+            return .push
         case .main:
             return .push
         }
