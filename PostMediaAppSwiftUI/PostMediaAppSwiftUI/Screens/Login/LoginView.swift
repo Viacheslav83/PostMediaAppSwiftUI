@@ -7,8 +7,10 @@
 
 import SwiftUI
 import PMUtilities
+import PMViewModels
 
 struct LoginView: View {
+    let vm: LoginVMProtocol = LoginVMP()
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
     
     private func loginTapped() {
