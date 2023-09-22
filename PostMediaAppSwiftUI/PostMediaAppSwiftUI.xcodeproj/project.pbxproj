@@ -67,6 +67,7 @@
 		0DE472E72AA779B3009E0E0C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE472E62AA779B3009E0E0C /* Coordinator.swift */; };
 		0DE472E92AA77A73009E0E0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE472E82AA77A73009E0E0C /* SceneDelegate.swift */; };
 		0DE472F42AAA2E21009E0E0C /* OnboardingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE472F32AAA2E21009E0E0C /* OnboardingItemView.swift */; };
+		0DFA141D2ABD9B180007302C /* HorizontalTextAndButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA141C2ABD9B180007302C /* HorizontalTextAndButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,7 @@
 		0DE472E82AA77A73009E0E0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0DE472EF2AAA2C3F009E0E0C /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		0DE472F32AAA2E21009E0E0C /* OnboardingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemView.swift; sourceTree = "<group>"; };
+		0DFA141C2ABD9B180007302C /* HorizontalTextAndButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalTextAndButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 				0D316B012AB0DFAB00C88966 /* TwoButtonView.swift */,
 				0D5A861D2AB442140052067E /* TextHeaderAndTextFieldView.swift */,
 				0D7858152ABCB14E00F78227 /* ButtonView.swift */,
+				0DFA141C2ABD9B180007302C /* HorizontalTextAndButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				0DE472E72AA779B3009E0E0C /* Coordinator.swift in Sources */,
 				0D316B052AB1923D00C88966 /* ButtonTextModifier.swift in Sources */,
 				0D400DE72AA73A19001A30E9 /* AppDelegate.swift in Sources */,
+				0DFA141D2ABD9B180007302C /* HorizontalTextAndButtonView.swift in Sources */,
 				0D316B022AB0DFAB00C88966 /* TwoButtonView.swift in Sources */,
 				0DE472D92AA776F0009E0E0C /* MapRouter.swift in Sources */,
 				0DE472E12AA77891009E0E0C /* RegisterView.swift in Sources */,

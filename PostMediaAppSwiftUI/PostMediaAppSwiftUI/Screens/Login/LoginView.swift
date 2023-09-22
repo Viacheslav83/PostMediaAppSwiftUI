@@ -18,7 +18,11 @@ struct LoginView: View {
     @EnvironmentObject var coordinator: Coordinator<MapRouter>
     
     private func loginTapped() {
-        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isFirstTimeUser.key)
+        // onboarding page
+//        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isFirstTimeUser.key)
+        
+        // main page
+        UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isUserLogged.key)
         sceneDelegate?.showScreens()
     }
     
@@ -26,33 +30,39 @@ struct LoginView: View {
         coordinator.show(.register, animated: true)
     }
     
-    private func showMainScreen() {
-        sceneDelegate?.showScreens()
-    }
-    
     var body: some View {
-        VStack {
-            Spacer()
-            
-            Image(vm.getUIModels().mainImageName.rawValue)
-                .resizable()
-                .scaledToFit()
-                .frame(width: AppConstats.screenWidth / 2, height: AppConstats.screenWidth / 2)
-                .cornerRadius(AppConstats.screenWidth / 4)
-            
-            TextHeaderAndTextFieldView(model: vm.getUIModels().emailType)
-            
-            TextHeaderAndTextFieldView(model: vm.getUIModels().passwordType)
-            
-            Spacer()
-            
-            TwoButtonView(buttonModel: vm.getUIModels().loginButtonType) { type in
-                print("type")
-                loginTapped()
+        ScrollView(.vertical) {
+            VStack {
+                Spacer()
+                    .frame(minHeight: 64)
+                
+                Image(vm.getUIModels().mainImageName.rawValue)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: AppConstats.screenWidth / 2, height: AppConstats.screenWidth / 2)
+                    .cornerRadius(AppConstats.screenWidth / 4)
+                
+                TextHeaderAndTextFieldView(model: vm.getUIModels().emailType)
+                
+                TextHeaderAndTextFieldView(model: vm.getUIModels().passwordType)
+                    .padding(.bottom, 24)
+                
+                Spacer()
+                
+                TwoButtonView(buttonModel: vm.getUIModels().loginButtonType) { type in
+                    print("type")
+                    loginTapped()
+                }
+                
+                HorizontalTextAndButtonView(type: vm.getUIModels().registerInfoTextType, 
+                                            didTapText: {
+                    showRegisterScreen()
+                })
+                    .padding(.bottom, 24)
             }
-        }
-        .padding(.horizontal, 16)
-    }
+            .padding(.horizontal, 16)
+        }//: VStack
+    } //: ScrollView
 }
 
 //MARK: - Preview
